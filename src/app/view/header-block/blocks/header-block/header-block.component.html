@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+	<mat-toolbar-row>
+		<span>SPA Finteh</span>
+		<span class="spacer"></span>
+		<app-search-input 
+		    [searchList] = 
+		    "paramsOfSearch === 'users' 
+		    ? (usersList$ | async) 
+		    : (selectedUsersList$ | async)"
+		    [keySearchString] = "keySearch"
+		    (search) = "searchValue($event)"> 
+		</app-search-input>
+	</mat-toolbar-row>
+</mat-toolbar>
+ 

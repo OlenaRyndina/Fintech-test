@@ -1,0 +1,13 @@
+<section class="selected-users">
+    <app-users-list
+        [users] = "selectedUsers"
+        (checkUser) = "changeSelectedUsersList($event)">	
+    </app-users-list>
+    <button 
+        mat-stroked-button 
+        color="warn"
+        class="selected-users-cleanList"
+        (click)="cleanUpUsersList()">
+        Очистить список пользователей
+    </button>
+</section>

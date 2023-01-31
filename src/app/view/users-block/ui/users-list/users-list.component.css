@@ -1,0 +1,26 @@
+:host {
+	display: flex;
+    justify-content: center;
+}
+
+.users-list {	
+    list-style: none;
+}
+
+.users-list__user {
+	margin-top: 5px;
+	min-width: 500px;
+	cursor: pointer;
+}
+
+mat-card:hover {
+    background-color: #c5cad0;
+}
+
+.user__avatar {
+	width: 30px;
+}
+
+td {
+	width: 150px;
+}

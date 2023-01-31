@@ -1,0 +1,18 @@
+li {
+	margin-bottom: 20px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #280387;
+}
+
+a:hover {
+	color: #6e6c72;
+}
+
+.active-link{
+	color: #be04b7;
+}

@@ -1,0 +1,9 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput 
+    [(ngModel)] = "searchValue"
+    name = "search"
+    (input) = searchData(searchValue)>
+    <mat-icon aria-hidden="false" fontIcon="search">search</mat-icon>
+  </mat-form-field>
+</form>

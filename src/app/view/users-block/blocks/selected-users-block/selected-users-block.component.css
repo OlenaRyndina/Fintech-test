@@ -1,0 +1,9 @@
+:host {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.selected-users-cleanList {
+	margin-left: 50px;	
+}

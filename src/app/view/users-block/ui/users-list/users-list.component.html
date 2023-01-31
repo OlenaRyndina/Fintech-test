@@ -1,0 +1,28 @@
+<app-filter-users [usersList] = "users"></app-filter-users>
+<ul class = "users-list">
+	<li class = "users-list__user" *ngFor = "let user of users">
+		<mat-card (click)="showUserInfo(user)">
+            <mat-card-content>
+                <label>
+            	    <img 
+            	        class="user__avatar"
+            	        src="{{user.avatar_url}}" alt="{{user.login}}">    <br> 
+                    <mat-checkbox 
+                        class="check-user" 
+                        [(ngModel)]="user.isChecked"
+                        (change) = "checkedUser(user)">
+                        <span class="user__login">{{user.login}}
+                        </span>
+                    </mat-checkbox>
+                </label><br>
+                <app-user-block
+                    *ngIf = "currentUser && user.login === currentUser.login && isShowDetails"
+                    [user] = "currentUser"
+                 >                	
+                </app-user-block>                
+            </mat-card-content>
+        </mat-card>       
+	</li>
+</ul>
+
+ 

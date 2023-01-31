@@ -1,0 +1,17 @@
+<ul>
+	<li>
+		<a 
+		    [routerLink] = "['./users']"
+		    routerLinkActive="active-link"
+		    [queryParams] = "{'type': 'users'}">
+		    Пользователи
+		</a>
+	</li>
+	<li>
+		<a 
+		    [routerLink] = "['./selectedUsers']"
+		    routerLinkActive="active-link"
+		    [queryParams] = "{'type': 'selectedUsers'}">Выбранные пользователи
+		</a>
+	</li>
+</ul>
